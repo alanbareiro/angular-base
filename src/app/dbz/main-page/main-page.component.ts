@@ -8,29 +8,20 @@ import { DbzService } from '../services/dbz.service';
 })
 export class MainPageComponent {
 
-personajes : Persona[]=[
-  {
-    nombre: 'Goku',
-    poder:250000
-  },
-  {
-    nombre:'Vegeta',
-    poder:220000
-  },
-  {
-    nombre:'Picoro',
-    poder:170000
-  }
-]
+  //personajes : Persona[]=[];
   nuevo : Persona ={
     nombre:'',
     poder:0
   }
-
-  agregarNuevoPersonaje(argument: Persona) : void{	
-    this.personajes.push(argument);
-    //console.log(argument);     
+/*
+  get personajes(): Persona[] {
+    return this.dbzService.personajes;
   }
- 
-  constructor(public dbzService : DbzService) { }
+*/
+
+
+  constructor() 
+  { 
+    //this.personajes = this.dbzService.personajes;
+  }
 }
